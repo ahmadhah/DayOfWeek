@@ -1,0 +1,39 @@
+body{
+    background-color: silver;
+}
+
+h1{
+    background-color: whitesmoke; width: 70%; text-align: center; margin: 0 auto; margin-top: 50px;
+    padding: 20px;
+}
+
+#container{
+    margin: 0 auto;
+    height: 100px; width: 50%;
+    margin-top: 2%;
+     border: 2px solid royalblue; 
+     background-color: snow;
+     padding: 30px;
+}
+
+#day{
+    text-align: center;
+    background-color:rgb(153, 202, 146);
+    padding: 20px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: large;
+    font-weight: 1000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#date{
+    text-align: center; background-color:cadetblue ; width: 100px; margin: 0 auto;
+    margin-top: 20px;
+    padding-right: 40px;
+    padding-left:40px ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    mar
+}
