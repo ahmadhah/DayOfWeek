@@ -6,11 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DayOfWeek</title>
     <script>
-        let a = document.getElementById('container')
-        let d = document.getElementById("date")
-       let date = new Date()
+
+        let d = document.getElementsByTagName('h3')
+        let dy = document.getElementsByTagName('p')
+        let date = new Date()
         let day = date.getDay()
         console.log(day)
+        let d1
+        let sdate = date.toLocaleDateString()
+
+        switch(day){
+
+            case 0:
+                d1 = "Sunday"
+            case 1 :
+                d1 = "Monday"
+            case 2 :
+                d1 = "Tuesday"
+            case 3 :
+                d1 = "Wednesday"
+            case 4 :
+                d1 = "Thursday"
+            case 5 :
+                d1 = "Friday"
+            case 6 :
+                d1 = "Saturday"
+        }
+        console.log(day)
+console.log(d1)
+        d.innerText = sdate;
+        dy.innerText = day;
+        
     </script>
 </head>
 <body style="background-color: silver;">
@@ -19,8 +45,8 @@
     height: 100px; width: 50%;
     margin-top: 10%;
      border: 2px solid royalblue; background-color: snow;">
-     <h3 style="text-align: center;">22 April 2021</h3>
-     <p id="date" style="text-align: center; background-color: white; width: 100px; margin: 0 auto;">Saturday</p>
+     <h3 id="date" style="text-align: center;">22 April 2021</h3>
+     <p id="day" style="text-align: center; background-color: white; width: 100px; margin: 0 auto;"></p>
     </div>
 </body>
 </html>
